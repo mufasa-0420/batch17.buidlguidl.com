@@ -74,20 +74,21 @@ const Home: NextPage = () => {
   });
   return (
     <>
-      <div className="flex items-center flex-col grow pt-10">
-        <div className="px-5">
+      <div className="flex items-center flex-col grow pt-6 sm:pt-10">
+        <div className="px-3 sm:px-5 w-full max-w-4xl">
           <h1 className="text-center">
-            <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Batch 17</span>
+            <span className="block text-xl sm:text-2xl mb-2">Welcome to</span>
+            <span className="block text-3xl sm:text-4xl font-bold">Batch 17</span>
           </h1>
-          <p className="text-center text-lg">Get started by taking a look at your batch GitHub repository.</p>
-          <p className="text-center text-lg">6.11.2025 ~ 6.28.2025</p>
+          <p className="text-center text-base sm:text-lg">
+            Get started by taking a look at your batch GitHub repository.
+          </p>
           <div className="flex justify-center my-4">
-            <span className="px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 via-indigo-500 to-blue-500 text-white text-xl font-extrabold shadow-lg animate-pulse border-2 border-white dark:border-indigo-400">
+            <span className="px-4 sm:px-6 py-2 rounded-full bg-gradient-to-r from-pink-500 via-indigo-500 to-blue-500 text-white text-base sm:text-xl font-extrabold shadow-lg animate-pulse border-2 border-white dark:border-indigo-400">
               🚀 Community Sprint: June 11 – June 28, 2025 🚀
             </span>
           </div>
-          <p className="text-lg flex gap-2 justify-center">
+          <p className="text-base sm:text-lg flex gap-2 justify-center">
             <span className="font-bold">Checked in builders count:</span>
             {isLoading ? (
               <span className="loading loading-spinner loading-sm"></span>
@@ -97,14 +98,14 @@ const Home: NextPage = () => {
           </p>
         </div>
 
-        <div className="grow bg-base-300 w-full mt-16 px-8 py-12">
-          <div className="flex flex-wrap justify-center items-stretch gap-8">
+        <div className="grow bg-base-300 w-full mt-10 sm:mt-16 px-2 sm:px-8 py-8 sm:py-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
             {members.map(member => (
               <div
                 key={member.address}
-                className="bg-white dark:bg-gray-900 rounded-xl shadow-lg dark:shadow-indigo-900 p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition-transform duration-300"
+                className="bg-white dark:bg-gray-900 rounded-xl shadow-lg dark:shadow-indigo-900 p-5 sm:p-6 w-full max-w-xs flex flex-col items-center hover:scale-105 transition-transform duration-300"
               >
-                <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-indigo-400 dark:border-indigo-300 shadow-lg mb-4">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-indigo-400 dark:border-indigo-300 shadow-lg mb-4">
                   <Image
                     src={member.avatar}
                     alt={`${member.name}'s avatar`}
@@ -113,10 +114,10 @@ const Home: NextPage = () => {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="font-bold text-xl mb-2 text-gray-900 dark:text-white">{member.name}</div>
+                <div className="font-bold text-lg sm:text-xl mb-2 text-gray-900 dark:text-white">{member.name}</div>
                 <div className="mb-2 break-all text-xs text-gray-500 dark:text-gray-300">{member.address}</div>
                 <div className="mb-4 text-sm text-gray-700 dark:text-gray-200 text-center">{member.description}</div>
-                <div className="flex gap-4">
+                <div className="flex gap-3 sm:gap-4">
                   {member.github && (
                     <a
                       href={`https://github.com/${member.github}`}
