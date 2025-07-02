@@ -15,9 +15,9 @@ const members = [
     telegram: "bobbyliu0420",
   },
   {
-    address: "0x5c3f1e2a6b7d8f9e3c4a5b6c7d8e9f0a1b2c3d4e",
+    address: "0x452fC452af3DCbC320400E8CA117EB71279B43c4",
     name: "Cool Guy",
-    avatar: "https://avatars.githubusercontent.com/u/12345678?v=4",
+    avatar: "https://avatars.githubusercontent.com/u/146797715?v=4",
     description:
       "👋 Hi! I’m CoolGuy, a passionate builder focused on smart contracts, DeFi, and open source. I love learning, collaborating, and shipping unstoppable apps!",
     github: "coolguy0525",
@@ -26,7 +26,7 @@ const members = [
   {
     address: "0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61",
     name: "Daniel",
-    avatar: "https://avatars.githubusercontent.com/u/87654321?v=4",
+    avatar: "/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61/0x645b4605dC74e8eFF38d3FD26C3cabA853ABbF61_avatar.jpeg",
     description: `Hi, I'm Daniel, a full-stack developer with a foundation in JavaScript based stacks. I've been
           interested in web3 development for a while now and decided to start out my journey with BuidlGuidl's
           SpeedRunEthereum. I enjoy the challenge of building complete applications from start to finish and I look
@@ -37,7 +37,7 @@ const members = [
   {
     address: "0xba230e7c7E39D09443d8Da0a332DD787BD1352cb",
     name: "ankur-JA",
-    avatar: "https://avatars.githubusercontent.com/u/11223344?v=4",
+    avatar: "https://github.com/ankur-JA.png",
     description: `I am passionate about building modern web applications and decentralized applications (dApps). I enjoy
           exploring new blockchain technologies, contributing to open-source projects, and learning about cybersecurity
           and smart contract development.`,
@@ -47,7 +47,7 @@ const members = [
   {
     address: "0xdaC6E56F86Fb6f18c4114C2E4f41901ab9803096",
     name: "Nejc",
-    avatar: "https://avatars.githubusercontent.com/u/22334455?v=4",
+    avatar: "https://avatars.githubusercontent.com/u/26038365?v=4",
     description: `I am a blockchain enthusiast and a researcher exploring the connections between mechatronics and
               blockchain technology. Hit me up if you want to chat about it!`,
     github: "NejcRozman",
@@ -55,14 +55,25 @@ const members = [
   },
   {
     address: "0xE474023791245Ff654167397Ea8262B891Ba207c",
-    name: "Daniel",
+    name: "Neeraj27",
     avatar: "https://avatars.githubusercontent.com/u/87654321?v=4",
     description: `Hi, I'm Daniel, a full-stack developer with a foundation in JavaScript based stacks. I've been
           interested in web3 development for a while now and decided to start out my journey with BuidlGuidl's
           SpeedRunEthereum. I enjoy the challenge of building complete applications from start to finish and I look
           forward to leveraging my skills by contributing to interesting and innovative decentralized applications.`,
-    github: "otomdee",
-    telegram: "Ox_Money",
+    github: "",
+    telegram: "",
+  },
+  {
+    address: "0xE474023791245Ff654167397Ea8262B891Ba207c",
+    name: "Adashima152",
+    avatar: "/0xEd2B81376450d9dBB42Aa7274649AB20fF5060DA_avatar.webp",
+    description: `Hi, I'm Daniel, a full-stack developer with a foundation in JavaScript based stacks. I've been
+          interested in web3 development for a while now and decided to start out my journey with BuidlGuidl's
+          SpeedRunEthereum. I enjoy the challenge of building complete applications from start to finish and I look
+          forward to leveraging my skills by contributing to interesting and innovative decentralized applications.`,
+    github: "adashima152",
+    telegram: "",
   },
   // ...add avatars for other members as needed...
 ];
